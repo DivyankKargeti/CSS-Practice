@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Joe Schomoe Animated Images</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		div{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #987284;
+		}
+
+		div img{
+			animation: tofro 1s infinite;
+			animation-direction: alternate;
+		}
+
+		@keyframes tofro{
+			from{padding-left:40px};
+			to{padding-right: 40px};
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		<img src="https://joeschmoe.io/api/v1/joe">
+		<img src="https://joeschmoe.io/api/v1/Divyank">
+		<img src="https://joeschmoe.io/api/v1/Rajat">
+		<img src="https://joeschmoe.io/api/v1/harshit">
+		<img src="https://joeschmoe.io/api/v1/nitin">
+	</div>
+
+</body>
+</html>
