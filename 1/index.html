@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			font-family: 'Saira Stencil One',cursive;
+		}
+
+		div{
+			height: 100vh;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #5F5980;
+		}
+		h1{
+			font-size:122px;
+			text-transform:uppercase;
+			color: white;
+			position:relative; /*This position relave property is very very important for the functionality i.e FOR USING PSEUDO ELEMENTS.*/
+		}
+
+	     /*Now starts the main functionality code*/
+
+	     h1:before{
+	     	content:"Divyank";
+	     	position: absolute;
+	     	top: 0;
+	     	left:0;
+	     	width:0%;
+	     	color:#650D1B;
+	     	transition: all 2s linear;
+	     	overflow:hidden;
+	     }
+
+	     h1:hover:before{
+	     	width:100%;
+	     }
+		</style>
+</head>
+<body>
+
+	<div>
+		<h1>Divyank</h1>
+	</div>
+
+</body>
+</html>
